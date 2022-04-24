@@ -1,0 +1,58 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        
+    }
+
+    var mult = 1;
+    var num = parseInt(prompt("Digite um número: "));
+    mostra("TABUADA de " + num);
+
+    while (mult <= 10) {
+        
+        mostra(num +" x " + mult + " = " + num * mult);
+        mult++ ;
+        
+    }
+
+    mostra("FIM<hr>");
+
+</script>
+
+<meta charset = "UTF-8">
+<script>
+    function pulaLinha() {
+        
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+        
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var num = parseInt(prompt("Entre com o número: "));
+    mostra("TABUADA de " + num);
+
+    for (var mult = 1; mult <=10; mult ++) {                        //    for(index iniciador; condição; passo) { corpo com instrução }
+                                                                       // mult ++    chama-se pós incremento                   
+        mostra("<br>" + num + " X " + mult + " = " + num * mult);
+    } 
+
+    mostra("FIM");
+
+</script>

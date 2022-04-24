@@ -1,0 +1,103 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+
+        mostra(anoCopa + " tem copa!");
+        anoCopa = anoCopa + 4;
+
+    }
+
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>
+
+
+<meta charset="UTF-8">
+<script>                        //    LOGIN E SENHA COM MAXIMO DE TENTATIVAS
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var contador = 1;
+    var maxTentativas = 3;
+
+    while (contador <= maxTentativas) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+        
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+            alert("Bem-vindo ao sistema " + loginInformado);
+            break;
+        } else {
+
+            if (contador == maxTentativas)  {
+
+                alert("Acesso não permitido. Máximo de tentativas alcançado!");
+                
+
+            }   else{
+
+                alert("Login inválido. Tente novamente");
+                
+            }
+            
+        }
+
+        contador ++;
+    }
+
+    document.write("FIM<br>");
+</script>
+
+
+<script>                        // isnan(variável)    que recebe True ou False
+
+var idade = parseInt(prompt("Digite sua idade"));
+
+while( isNaN(idade) ) {
+    idade = parseInt(prompt("Digite sua idade"));    
+}
+
+alert(idade);
+
+
+</script>
+
+<meta charset = "UTF-8">
+
+<script>
+  
+    for(var i = 0; i < 10; i++) {
+
+        alert("O resultado é " + 2*i);
+        
+    }
+
+    var i = 0;
+
+    while(i < 10)   {
+        alert("A resposta é " + i*3);
+    i ++;
+
+    }
+ document.write("FIM");
+
+</script>
+
+

@@ -1,0 +1,39 @@
+<meta charset = "UTF-8">
+
+<input/>
+<button>Compare com meus segredos</button>
+
+<script>
+
+    var segredos =[5,7,10,2,3];        // var é um array; cada elemento tem seu index que começa por zero. Logo,  segredos[0] == 2
+                                        // os elementos da array podem ser de qq tipo (string, numero ou booleano)
+    var input = document.querySelector("input");
+    input.focus();
+    
+
+    function verifica() {
+
+        var acertou= false;
+        
+        for(var posicao = 0; posicao < segredos.length; posicao ++)  {         // array.length  retorna o tamanho, ie, num de elementos do array
+            if(input.value == segredos[posicao])    {
+
+                alert("Você acertou!!");
+                acertou = true;
+                break;
+            }
+            
+        }      
+        
+        if(acertou == false) {
+            alert("Vc errou!!");
+        }
+
+        input.value = "";
+        input.focus();
+                      
+    }
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>

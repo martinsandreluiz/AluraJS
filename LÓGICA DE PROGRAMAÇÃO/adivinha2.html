@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+
+    }
+    var numero = Math.round(Math.random()*10);
+    var cont = 1;
+    
+    while(cont <= 3)    {
+    
+    var chute = parseInt(prompt("Chute um número entre 1 e 10: "));
+    
+        if(chute == numero) {
+            prompt("Parabéns, vc acertou!!");
+            break;
+            
+        }   else{
+
+                alert("Vc errou. Tente novamente: ");
+            
+                    if(cont == 3) {
+                        mostra("<br> Que pena! O num pensado foi " + numero + "<br>FIM"); 
+
+                }              
+            
+            }
+            cont ++;
+           
+    }
+    
+    </script>
+
+    
+
+
+
+

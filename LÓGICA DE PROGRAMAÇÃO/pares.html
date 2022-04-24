@@ -1,0 +1,96 @@
+<meta charset = "UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        
+                
+    }
+
+    var num = 2;
+
+    while (num <= 100) {
+        
+        mostra(" " + num + ",");
+        num = num +2;
+
+    }
+
+    mostra("<br>FIM");
+
+</script>
+
+
+
+
+
+<meta charset = "UTF-8">
+<br><br>
+<script>
+
+/// INTEIROS ENTRE 30 E 40, EXCETO 33 E 37
+
+    function mostra(frase)  {
+
+        document.write(frase);
+
+    }
+
+    var n = 30;
+
+    while (n <= 40) {
+
+        if (n ==33 || n == 37)  {           // var lógica "ou" é dada por ||
+            
+            n ++;
+                     
+
+        }   else{
+            
+            mostra(n + ", ");
+            n ++;
+
+        }
+         
+        
+    }            
+
+mostra("<br>FIM<br>");
+pulaLinha();
+
+</script>
+
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+        
+        document.write(frase);
+        pulaLinha();
+
+    }
+    
+    var num = parseInt(prompt("Para ordem decrescente, digite o número pelo qual vc quer começar: "));
+
+    while (num >= 0) {
+        
+        mostra(num);
+        num --;         // mesma coisa que   num = num - 1 
+
+    }
+ mostra("FIM.")
+
+</script>

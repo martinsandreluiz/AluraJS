@@ -1,0 +1,91 @@
+<meta charset = "UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        
+    }
+
+    var vitorias = parseInt(prompt("Entre com número de vitórias do seu time: "));
+    var empates =  parseInt(prompt("Foram quantos empates? "));
+    var pontos = vitorias*3 + empates
+
+    mostra("Seu time obteve " + pontos + " pontos.");
+
+    if (pontos > 28) {
+
+        mostra("Seu time está melhor que no ano passado.");
+    }
+
+    if (pontos < 28) {
+
+        mostra("Seu time está pior que no ano passado.");
+
+    }
+
+    if (pontos == 28) {
+
+        mostra("Seu time está igual que no ano passado.");
+    }
+mostra("FIM");
+
+</script>
+
+<meta charset = "UTF-8">
+
+<script>
+    
+    function pulaLinha() {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+
+    }    
+
+    function calculaImc(altura, peso) {
+
+        return peso / altura ** 2;
+        
+    }
+
+    var nome = prompt("Qual é seu nome? ");
+
+    var altura = parseFloat(prompt(nome + ", entre com sua altura (m): "));
+    var peso = parseFloat(prompt(nome + ", agora insira seu peso (Kg): "));
+
+    var imc = calculaImc(altura, peso);
+    mostra(nome + ", seu imc é " + imc);
+
+    if (imc < 20) {
+
+        mostra("Seu IMC está abaixo do recomendado");
+
+    } 
+
+    if (imc > 30) {
+
+        mostra("Cuidado!! Seu IMC está acima do recomendado.");
+    }
+
+    if (imc >= 20 && imc <= 30) {                
+
+        mostra("Parabéns. Seu IMC é conmsiderado normal.");
+
+    }
+mostra("FIM")
+    
+</script>

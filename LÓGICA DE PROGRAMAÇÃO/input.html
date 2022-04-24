@@ -1,0 +1,30 @@
+<input/>                                                
+<button>Compare com meu segredo</button>
+
+<script>
+    var segredo = Math.round(Math.random()*10);
+    var input = document.querySelector("input");        // atribui a tag <input> do mundo html à variável que crio no mundo JS
+    input.focus();                                  // faz o cursor piscar na caixa de input
+
+    function verifica() {
+
+        if(input.value == segredo)    {
+
+            alert("Vc ACERTOU!");
+
+        }   else    {
+
+                alert("Vc ERROU!!!!");
+
+            }
+        input.value = "";           // a cada rodada, limpa a caixa de input
+        input.focus();              //  a cada rodada, faz o cursor retornar para a a caixa de input
+
+    }
+
+    var button = document.querySelector("button");      // atribui a tag <button> do mundo html à variável que crio no mundo JS
+
+    button.onclick = verifica;    // método onclick significa clicar sobre a tag <button> 
+                                // e não posso chamar a função verifica(), senão ela executa. Passo apenas o nome dela: verifica
+      
+</script>

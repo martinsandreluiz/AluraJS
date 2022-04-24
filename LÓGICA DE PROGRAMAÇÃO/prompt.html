@@ -1,0 +1,25 @@
+<meta charset = "Utf-8">
+<script>
+function pulaLinha(){
+
+    document.write("<br><hr><br></hr>");
+
+}
+
+function calculaImc(altura, peso){                              
+
+    return peso/altura**2;
+    pulaLinha();
+
+
+}
+
+var nome = prompt("Qual é seu nome? ");
+var altura = prompt(nome + ", informe sua altura (m): ");       // a fc prompt retorna uma string
+var peso = prompt(nome + ", informe seu peso (kg): ");
+
+var imc = calculaImc(altura, peso);                             // as duas variáveis aqui são strings
+
+document.write(nome + ", seu imc é: " + imc);
+
+</script>

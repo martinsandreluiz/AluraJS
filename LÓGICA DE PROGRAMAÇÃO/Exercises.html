@@ -1,0 +1,100 @@
+<meta charset = "UTF-8">
+
+<script>
+    var passo = 28;
+    var atual = 2016;
+    var geracoes = (atual-1500)/passo;
+
+    function pulaLinha(){
+        document.write("<br><hr><br></hr>");            // tag <hr> para separar resultados
+    }
+
+    function mostra(frase){
+        document.write("<big><br>" + frase + "</big>"); // tag big para aumentar tamanho fonte
+        pulaLinha();
+        
+    }
+
+    mostra("Desde o descobrimento do Brasil se passaram " + (atual-1500) + " anos.");
+    mostra("E isto corresponde a " + Math.round(geracoes) + " gerações");   // Math.round(var) para arredondar
+
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script>
+
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function imc(altura, peso) {
+
+        imc = peso / (altura * altura);
+        
+    }
+
+    imc(1.76, 99);
+    mostra("O meu IMC é : " + imc);
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+
+</script>

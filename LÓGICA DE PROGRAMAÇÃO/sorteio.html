@@ -1,0 +1,43 @@
+<meta charset = "UTF-8">
+<script>
+    function pulaLinha() {
+
+    document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+    }
+
+    function sorteia(n) {
+
+    return Math.round(Math.random() * n);
+
+    }
+
+    var chute = parseInt(prompt("Pense em um número entre 0 e 10: "));
+    var numSorteado = sorteia(10);
+
+    mostra(numSorteado);
+
+    if (chute == numSorteado)   {
+
+    mostra("Parabéns. Vc acertou!" + "<br> FIM");
+
+    }   else    {
+
+        if (chute < numSorteado) {
+
+            mostra("Vc errou! Pensei em número maior.");
+
+    }   else {
+
+            mostra("Vc errou! Pensei em número menor");
+
+        }
+    }
+</script>

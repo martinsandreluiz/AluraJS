@@ -1,0 +1,34 @@
+<meta charset = "UTF-8">
+
+<script>
+    
+    function pulaLinha() {
+
+    document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+    }
+
+    var numRandom = Math.round(Math.random()*10);                   // métodos Math.round e Math.random
+    var chute = parseInt(prompt("Chute um número entre 1 e 10: "));
+
+    if (chute == numRandom) {                                       // condicionais if ; else
+
+    mostra("Parabéns! Vc acertou.");
+
+    } else {
+
+    mostra("Vc errou. O número random foi " + numRandom);
+
+    }    
+
+
+</script>
+ 
+    

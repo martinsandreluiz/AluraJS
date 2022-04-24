@@ -1,0 +1,23 @@
+<meta charset = "UTF-8">
+<script>
+
+    var cont = 1;
+    var totalGastos = 0;
+    var mes = prompt("Qual o mês? ")
+    var numEventos = parseInt(prompt("Quantos eventos no mês de " + mes + " ?")) 
+    
+    while (cont <= numEventos) {
+        
+        var gastos = parseFloat(prompt("Entre com os gastos do evento: R$ "));
+        totalGastos = totalGastos + gastos;
+        cont ++;
+        
+    }
+
+    var media = parseFloat(totalGastos / numEventos);
+    document.write("A média de gastos no mês de " + mes + " foi R$ " + media);
+    document.write("<br>FIM")
+
+
+
+</script>

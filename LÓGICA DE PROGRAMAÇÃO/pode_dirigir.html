@@ -1,0 +1,31 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    var idade = parseInt(prompt("Quantos anos vc tem? "));
+    var habilitacao = prompt("Vc tem carteira? Responda S ou N.").toUpperCase();
+
+    if (idade >= 18 && habilitacao == "S")    {
+
+        mostra("Parabéns!! Vc pode dirigir.");
+
+    }   else {
+
+        mostra("Vc não pode dirigir.")
+    }
+
+
+</script>

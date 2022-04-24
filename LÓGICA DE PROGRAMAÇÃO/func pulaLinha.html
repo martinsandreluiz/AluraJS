@@ -1,0 +1,68 @@
+<meta charset="utf-8">
+
+<script>
+    var puloLinha = "<br>"      
+
+</script>
+
+
+<script>
+    function pulaLinha(){                                                     //tudo que estiver no bloco dentro das chaves pertence à função 
+
+        document.write("<h1>Texto começa aqui e pulo 2 linhas com a function.</h1>")
+        document.write("<br><br>");                                         // IDENTAR escrita do conteúdo do bloco
+        document.write("<h3>Título formatado com a TAG H3 e pulo mais 2 linhas até o fim.<h3>");             // usando a TAG H3
+        document.write("<br><br> Fim.");    
+
+    };
+    
+    pulaLinha();            // chamando a função criada
+    
+    
+</script>
+
+<br>
+<br>
+<script>
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    mostra("function com document.write e pulaLinha");
+
+
+</script>
+
+<script>
+    function pulaLinha(linhas) {
+
+        n = 0;
+            while (n < linhas){
+            document.write("<br>");
+               n += 1;
+             }        
+    }
+
+    function mostra(texto, linhas) {
+        document.write(texto);
+        pulaLinha(linhas);
+    }
+
+    mostra("Pulando 2 linhas", 2);
+    mostra("Pulando 10 linhas", 10);
+    mostra("Fim", 0);
+
+</script>
+
+
+<script>
+alert("Frase que vc deseja exibir entre aspas"); // No Caso de uma String
+alert(80); // No Caso de Número
+variavel = "Olá Mundo!";
+alert(variavel); // No caso de Variaveis
+alert("Alert com concatenação de valores! " + variavel + "Número: " + 80); // Contatenando valores
+
+</script>

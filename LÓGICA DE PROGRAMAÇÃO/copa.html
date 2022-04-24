@@ -1,0 +1,31 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha()    {
+
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+       
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Até qual ano vc deseja saber se houve Copa? "));
+
+    while (anoCopa <= limite) {
+
+            mostra("Houve copa em " + anoCopa);
+            anoCopa = anoCopa + 4;
+        
+    }
+
+    mostra("FIM");
+
+    
+</script>
